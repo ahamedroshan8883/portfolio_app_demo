@@ -1,7 +1,7 @@
 #skills{
-    overflow: hidden;
     width: 100vw;
-    height: calc(100vh-5rem);
+    min-height: calc(100vh- 5rem);
+    /* height: 100vh; */
     max-width: 65rem;
     margin: 0 auto;
     display: flex;
@@ -13,7 +13,7 @@
 .skillsTitle{
     font-size: 3rem;
     font-weight: 600;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin-bottom: 1.5rem;
 }
 .skillsDesc{

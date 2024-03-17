@@ -1,3 +1,17 @@
+.heading{
+    flex-direction: row;
+    display: none;
+}
+.heading1{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    color: gold;
+    font-size: 2rem;
+}
+.heading2{
+    margin-top: 0.8rem;
+    font-weight: 400;
+}
 .navbar{
     background-color: rgb(30,30,30);
     height: 5rem;
@@ -82,6 +96,9 @@
     font-size: 1.5rem;
 }
 @media screen and (max-width:720px) {
+    .heading{
+        display: flex;
+    }
     .mobMenu{
         display: flex;
     }

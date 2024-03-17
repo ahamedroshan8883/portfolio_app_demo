@@ -10,6 +10,9 @@ export default function NavBar(){
   return (<>
     <nav className="navbar">
         <img src={logo} alt="logo" className="logo"/>
+        <div className="heading">
+          <h1 className="heading1">ARA</h1>&nbsp;<h3 className="heading2"> Portfolio</h3>
+        </div>
         <div className="navList">
           <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="navListItem">Home</Link>
           <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="navListItem">About</Link>
