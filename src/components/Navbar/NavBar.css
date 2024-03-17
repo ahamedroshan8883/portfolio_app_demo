@@ -58,6 +58,9 @@
     align-items: center;
     cursor: pointer;
 }
+.desktopMenubtn:hover{
+    background-color: yellow;
+}
 .logo{
     width: 70px;
     margin: 1rem;

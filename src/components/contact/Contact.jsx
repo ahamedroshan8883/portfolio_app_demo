@@ -6,6 +6,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from '@emailjs/browser'
 import Snackbar from "../Snackbar/Snackbar";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaUserCircle } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function Contact(){
   const form = useRef();
@@ -35,9 +38,9 @@ export default function Contact(){
           <h1 className="contactpageTitle">Contact me</h1>
           <span className="contactDesc">Please fill out the form below to discuss any work opportunities</span>
           <form className="contactForm" ref={form} onSubmit={(e)=>handleForm(e)}>
-            <input type="text" name="from_name" id="" className="name" placeholder="Your Name"/>
-            <input type="email" name="from_email" id="" className="name" placeholder="Your Email"/>
-            <textarea className="message" name="message" rows="5" placeholder="Your Message"/>
+            <input type="text" name="from_name" id="" className="name" placeholder="Your Name"/><FaUserCircle className="icon1"/>
+            <input type="email" name="from_email" id="" className="name" placeholder="Your Email"/><BiLogoGmail className="icon2"/>
+            <textarea className="message" name="message" rows="5" placeholder="Your Message"/><FaEnvelope className="icon3"/>
             <button type="submit" className="submitbtn">Submit</button>
           </form>
           <div className="links">

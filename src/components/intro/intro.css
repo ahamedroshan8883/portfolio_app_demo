@@ -24,6 +24,10 @@
     border: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: yellow;
 }
 .introContent{
     height: 100vh;

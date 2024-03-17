@@ -25,6 +25,8 @@
     align-items: center;
     width: 90vw;
     max-width: 60rem;
+    position: relative;
+
 }
 .email, .name, .message{
     font-size: medium;
@@ -37,6 +39,28 @@
     border-radius: 0.5rem;
     background-color: rgb(40,40,40);
 }
+.email::placeholder, .name::placeholder, .message::placeholder{
+    padding-left: 1rem;
+}
+.icon1{
+    color: rgb(100,100,100);
+    position: absolute;
+    bottom: 90%;
+    left: 17.5%;
+}
+.icon2{
+    color: rgb(100,100,100);
+    position: absolute;
+    bottom: 75.25%;
+    left: 17.5%;
+}
+.icon3{
+    color: rgb(100,100,100);
+    position: absolute;
+    bottom: 60.25%;
+    left: 17.5%;
+}
+
 .submitbtn{
     border: none;
     border-radius: 0.5rem;
@@ -47,9 +71,10 @@
     cursor: pointer;
 }
 .submitbtn:hover{
-    background-color: rgb(60,60,60);
-    color: white;
+    background-color: yellow;
 }
+
+
 .links{
     display: flex;
     flex-wrap: wrap;
