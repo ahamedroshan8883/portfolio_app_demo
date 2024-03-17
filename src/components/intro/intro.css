@@ -1,0 +1,85 @@
+#intro{
+    height: calc(95vh - 5rem);
+    width: 100vw;
+    max-width: 90rem;
+    margin: 0  auto;
+    overflow: hidden;
+    position: relative;   
+}
+
+.bg{
+    position: absolute;
+    top: -4rem;
+    right: 0px;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.btn{
+    font-weight: 700;
+    margin: 1rem 0;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    border: none;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 1.75rem;
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+@media screen and (max-width:460px) {
+    .bg{
+    right: -170px;
+    }
+}
+@media screen and (max-width:400px) {
+    #intro{
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+    }
+    .introContent{
+        border-radius: 10%;
+        margin-left: 10vw;
+        width: 90vw;
+        position: absolute;
+        bottom: 5rem;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        height: 50vh;
+    }
+    
+}
+@media screen and (max-width:440px) {
+    
+    .bg{
+        right:-10px;
+    }
+    .introContent{
+       font-size: 1rem;
+        /* height: ; */
+    }
+    .hello{
+        font-size: 1rem;
+    }
+    .introPara{
+        font-size: 0.5rem;
+    }
+}

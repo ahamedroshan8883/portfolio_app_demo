@@ -1,0 +1,49 @@
+#works{
+    min-height: calc(100vh-4rem);
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+}
+.workTitle{
+    margin: 1.5rem 0;
+    font-size: 3rem;
+}
+.workDesc{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.workingImgs{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+}
+.workingImg{
+    object-fit: cover;
+    height: 20rem;
+    width: 20rem;
+    margin: 0.75rem;
+    border-radius: 2%
+}
+@media screen and (max-width:590px) {
+    .workingImg{
+        width: 50vw;
+        height: 25vh;
+    }
+}
+.workbtn{
+    margin: 3rem;
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
