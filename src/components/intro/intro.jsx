@@ -11,7 +11,7 @@ export default function Intro(){
         <div className="introContent">
             <span className="hello">Hello,</span>
             <span className="introText">I'm <span className="introName">Ahamed Roshan Akther</span><br/>Full Stack developer</span>
-            <p className="introPara">I am a passionate and results-oriented full-stack developer with <br/> experiencein both  front-end and back-end development.</p>
+            <p className="introPara">I am a passionate and results-oriented full-stack developer with <br/> experience in both  front-end and back-end development.</p>
             <Link><button className="btn"><FaSuitcase/>&nbsp;Hire me</button></Link>
         </div>
         <img src={img} alt="Profile" className="bg"/>
