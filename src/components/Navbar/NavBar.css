@@ -26,9 +26,15 @@
     top: 0;
     z-index: 3;
 }
+.navList{
+    display: flex;
+    flex-direction: row;
+}
 .navListItem{
     margin: 1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 .navListItem:hover{
     color: yellow;
@@ -83,6 +89,8 @@
     padding: 0.5rem 3rem;
     margin: 0.25rem;
     background-color: rgb(30,30,30);
+    display: flex;
+    align-items: center;
 }
 .listItem:hover{
     color: yellow;
