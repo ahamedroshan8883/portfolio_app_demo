@@ -1,13 +1,15 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import '../contact/Contact.css'; 
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import emailjs from '@emailjs/browser'
+import Snackbar from "../Snackbar/Snackbar";
 
 export default function Contact(){
   const form = useRef();
+  const [snackbar,setSnackbar] = useState(null);
   const handleForm = (e)=>{
     e.preventDefault();
     emailjs
@@ -16,15 +18,20 @@ export default function Contact(){
       })
       .then(
         () => {
+          if('SUCCESS'){
+          setSnackbar("inline");
+          }
           console.log('SUCCESS!');
         },
         (error) => {
           console.log('FAILED...', error.text);
         },
       );
+      setSnackbar(null);
   }
   return (<>
         <section id="contactpage">
+          <Snackbar className="snackbar" snackbar={snackbar}/>
           <h1 className="contactpageTitle">Contact me</h1>
           <span className="contactDesc">Please fill out the form below to discuss any work opportunities</span>
           <form className="contactForm" ref={form} onSubmit={(e)=>handleForm(e)}>

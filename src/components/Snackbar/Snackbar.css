@@ -1,0 +1,13 @@
+.snackbar{
+    padding: 0.5rem 1rem;
+    background-color: RGB(82, 185, 99);
+    width: fit-content;
+    border-radius: 0.4rem;
+    color: 	white;
+    font-weight: 500;
+    display: none;
+}
+.checkmark{
+    object-fit: cover;
+    font-weight: 500;
+}

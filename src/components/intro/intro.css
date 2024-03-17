@@ -1,7 +1,7 @@
 #intro{
     height: calc(95vh - 5rem);
     width: 100vw;
-    max-width: 90rem;
+    max-width: 75rem;
     margin: 0  auto;
     overflow: hidden;
     position: relative;   
@@ -51,26 +51,28 @@
 }
 @media screen and (max-width:400px) {
     #intro{
-    width: 30rem;
+    display: flex;
+    justify-content: center;
     height: 40rem;
     position: relative;
     }
     .introContent{
         border-radius: 10%;
-        margin-left: 10vw;
-        width: 90vw;
+        width: 70vw;
         position: absolute;
         bottom: 5rem;
+        /* background-color: rgb(60, 60, 60); */
         background: transparent;
         backdrop-filter: blur(10px);
-        height: 50vh;
+        justify-content: center;
+        height: 40vh;
     }
     
 }
 @media screen and (max-width:440px) {
     
     .bg{
-        right:-10px;
+        right:-100px;
     }
     .introContent{
        font-size: 1rem;

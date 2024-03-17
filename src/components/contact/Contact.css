@@ -6,6 +6,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    position: relative;
 }
 .contactpageTitle{
     font-size: 3rem;
@@ -45,6 +46,10 @@
     margin: 2rem;
     cursor: pointer;
 }
+.submitbtn:hover{
+    background-color: rgb(60,60,60);
+    color: white;
+}
 .links{
     display: flex;
     flex-wrap: wrap;
@@ -60,4 +65,10 @@
 }
 .link:hover{
     color: yellow;
+}
+.snackbar{
+    position: absolute;
+    left: 50%;
+    bottom: 15rem;
+    transform: translate(-50%,-50%);
 }
